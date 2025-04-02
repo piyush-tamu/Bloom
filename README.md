@@ -1,12 +1,40 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+/src
+|-- /assets                      # Static assets like images, logos, etc.
+|-- /components                  # Reusable components (Buttons, Modals, Inputs, etc.)
+|-- /hooks                       # Custom hooks for data fetching, state management, etc.
+|-- /pages                       # All the primary pages of the application
+|   |-- /Dashboard               # Financial Dashboard, Membership Dashboard, Event Dashboard
+|       |-- FinancialDashboard.jsx
+|       |-- MembershipDashboard.jsx
+|       |-- EventDashboard.jsx
+|   |-- /FinancialManagement     # Financial Management pages
+|       |-- BudgetPlanning.jsx
+|       |-- DonationTracking.jsx
+|       |-- ExpenseTracking.jsx
+|       |-- GrantManagement.jsx
+|   |-- /MembershipManagement    # Membership Management pages
+|       |-- ContactDatabase.jsx
+|       |-- MembershipLevels.jsx
+|       |-- MemberRenewals.jsx
+|   |-- /EventManagement         # Event Management pages
+|       |-- EventCalendar.jsx
+|       |-- RegistrationManagement.jsx
+|       |-- AttendanceTracking.jsx
+|       |-- PostEventFeedback.jsx
+|-- /layouts                     # Layout components (NavBar, Sidebar, Footer, etc.)
+|   |-- AdminLayout.jsx
+|-- /services                    # API services for interacting with backend
+|   |-- financialService.js
+|   |-- membershipService.js
+|   |-- eventService.js
+|-- /store                       # State management (using Zustand or Redux)
+|   |-- financialStore.js
+|   |-- membershipStore.js
+|   |-- eventStore.js
+|-- /utils                       # Utility functions (helper functions, constants, etc.)
+|   |-- constants.js
+|   |-- helpers.js
+|-- App.jsx                      # Main application entry point
+|-- index.js                     # ReactDOM render entry point
+|-- tailwind.config.js           # TailwindCSS configuration
+|-- package.json                 # Package dependencies and scripts

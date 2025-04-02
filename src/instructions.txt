@@ -1,0 +1,2 @@
+For normal reactjs file: rafce
+For props reactjs file: rafcp
